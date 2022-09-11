@@ -1,0 +1,17 @@
+<%- include('../partials/header') %>
+
+<h1 class="h1"><%= crypto.name %></h1>
+
+<div class="card">
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            Prix (€) : <span id="crypto_eur_price" data-name="<%= crypto.id %>"><%= crypto.priceEur %></span>
+        </li>
+        <li class="list-group-item">
+            Prix ($) : <span id="crypto_usd_price" data-name="<%= crypto.id %>"><%= crypto.priceUsd %></span>
+        </li>
+        <a target="_blank" href="<%= crypto.explorer %>" class="btn btn-primary">Plus d'infos</a>
+    </ul>
+</div>
+
+<%- include('../partials/footer') %>

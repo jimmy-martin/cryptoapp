@@ -1,0 +1,15 @@
+<%- include('../partials/header') %>
+
+<h1 class="h1">Toutes les cryptos</h1>
+
+<ol>
+    <% cryptos.forEach(crypto => { %>
+    <li>
+        <a href="/<%= crypto.id %>">
+            <%= crypto.name %>
+        </a>
+    </li>
+    <% }) %>
+</ol>
+
+<%- include('../partials/footer') %>
